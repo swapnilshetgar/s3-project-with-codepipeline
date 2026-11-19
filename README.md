@@ -4,7 +4,7 @@ Deploy a static website from GitHub to a private Amazon S3 bucket with AWS CodeP
 
 ## Architecture
 
-![AWS static website CI/CD architecture](architecture.svg)
+![AWS static website CI/CD architecture](s3prijectarch.webp)
 
 **Request path:** visitors use the CloudFront URL or custom domain. Route 53 (optional) points the domain to CloudFront. CloudFront serves cached content over HTTPS, applies the attached WAF web ACL, and reads the private S3 origin through OAC.
 
